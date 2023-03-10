@@ -10,10 +10,18 @@
 }
 body {
   overflow-x: hidden;
-  font-family: 'Oswald', sans-serif;
 }
-nav{
-  font-family: 'Oswald', sans-serif !important;
+/* General styles:end */
+
+body,nav,.home-details h1,
+#about-section,
+#service-section,
+#project-section,
+#client-section,
+#contact-section,#team-section {
+  font-family: "Oswald", sans-serif !important;
+}
+nav {
   margin: 3% 0% 0% 7%;
 }
 .bar1,
@@ -21,7 +29,6 @@ nav{
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #6610f2;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -34,16 +41,18 @@ nav{
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
-.navbar-brand,.nav-link{
+.navbar-brand,
+.nav-link {
   color: #6610f2 !important;
 }
-.navbar-nav{
+.navbar-nav {
   margin-left: 60%;
 }
 .toggleBtn,
 .navbar-toggler {
   cursor: pointer;
 }
+.navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active {
   outline: none !important;
@@ -53,369 +62,405 @@ nav{
   display: inline-block;
 }
 .navbar-toggler {
-  outline: none !important;
-  border: none !important;
   background: none !important;
 }
-.nav-item{
+.nav-item {
   padding: 0 20px;
 }
-.navbar-brand{
+.navbar-brand {
   font-size: 2.2rem !important;
 }
-.nav-link{
+.nav-link {
   font-size: 18px !important;
 }
-#home-section{
+#home-section,
+#about-section,
+#service-section,
+#project-section,
+#client-section,
+#contact-section,
+.about-images,
+.service-images,
+.project-images,
+.client-images,
+.team-member,
+.service,
+.project,
+.client,
+.team-images,
+.footer {
   display: flex;
+}
+#home-section,
+#about-section,
+#service-section,
+#project-section,
+#client-section,
+#contact-section,
+#about-section,
+.about-images,
+.service-images,
+.project-images,
+.client-images,
+.team-images,
+.footer {
   flex-direction: row;
+}
+#home-section,.about-images,
+.service-images,
+.project-images,
+.client-images,.team-member,
+.service,
+.project,
+.client {
   flex-wrap: wrap;
+}
+#home-section,.home-details button,#project-section,
+#contact-section,#team-section,.team-images,.project hr,.footer-details i {
   color: #6610f2;
 }
-#home-section img{
+#home-section img {
   height: 36%;
   width: 36%;
   margin-left: 55%;
   margin-top: -30%;
 }
-.home-details{
+.home-details {
   margin: 12% 0 0 13%;
   width: 30%;
 }
-.home-details h1{
+.home-details h1,.about-description h1,#service-section h1,
+#project-section h1,
+#client-section h1,
+#contact-section h1,#team-section h1 {
   font-size: 6rem;
-  font-family: 'Oswald', sans-serif;
 }
-.home-details button{
+.home-details button {
   height: 60px;
   width: 220px;
   border: 1px solid #6610f2;
   font-size: 18px;
   margin-top: 4%;
   text-transform: uppercase;
-  color: #6610f2;
   background-color: #fff;
   padding: 13px;
 }
-#about-section,#service-section,#project-section,#client-section,#contact-section{
-  display: flex;
-  flex-direction: row;
+#about-section,
+#service-section,
+#project-section,
+#client-section,
+#contact-section,
+#about-section,
+#service-section,
+#client-section {
   color: #fff;
-  font-family: 'Oswald', sans-serif !important;
 }
-#about-section,#service-section,#client-section{
-  color: #fff;
-}
-#about-section,#service-section,#client-section{
+.bar1,
+.bar2,
+.bar3,
+#about-section,
+#service-section,
+#client-section {
   background-color: #6610f2;
 }
-#about-section{
-  flex-direction: row;
+#about-section {
   margin-top: 3%;
 }
-#service-section,#project-section,#client-section,#contact-section{
+#service-section,
+#project-section,
+#client-section,
+#contact-section,.about-images,.team-member,
+.service,
+.project,
+.client  {
   flex-direction: column;
 }
-#project-section,#contact-section{
-  color: #6610f2;
-}
-.about-description{
+.about-description {
   margin: 8% 0% 5% 15%;
 }
-.about-description h1{
-  font-size: 6rem;
+.about-description h1,.service-images,
+.project-images,
+.client-images {
   margin-bottom: 7%;
 }
-#service-section h1,#project-section h1,#client-section h1,#contact-section h1{
+#service-section h1,
+#project-section h1,
+#client-section h1,
+#contact-section h1 {
   margin: 8% 0 8% 15%;
-  font-size: 6rem;
 }
-.about-description p{
+.about-description p {
   width: 60%;
+}
+
+.about-description p,.footer-details p {
   font-size: 20px;
 }
-.about-images{
+.about-images {
   margin: 8% 13% 5% 0;
-  flex-direction: column;
 }
-.about-images,.service-images,.project-images,.client-images{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.about-images img{
+.about-images img {
   width: 500px;
   margin: 1%;
 }
-.service-images img,.project-images img{
+.service-images img,
+.project-images img {
   width: 400px;
   height: 300px;
   padding: 0 2%;
 }
-.client-images img{
+.client-images img {
   width: 200px;
   height: 200px;
   padding: 0 8%;
 }
-.service-images,.project-images,.client-images{
+.service-images,
+.project-images,
+.client-images,.team-images,.team-member,
+.service,
+.project,
+.client {
   justify-content: center;
   align-items: center;
 }
-.about1{
+.about1 {
   height: 200px;
 }
-.about2{
+.about2 {
   height: 300px;
 }
-#team-section{
-  color: #6610f2;
-  font-family: 'Oswald', sans-serif !important;
+#team-section {
   margin: 6% 15%;
 }
-#team-section h1{
-  font-size: 6rem;
+#team-section h1 {
   margin-bottom: 10%;
 }
-.team-member img{
+.team-member img {
   height: 50%;
   width: 55%;
   margin: 0 3%;
 }
-.team-images{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  color: #6610f2;
-}
-.team-member,.service,.project,.client{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.team-member h3,.service h5,.project h5{
+.team-member h3,
+.service h5,
+.project h5 {
   margin: 4% 0;
 }
-.client{
+.client {
   text-align: center;
   margin: 0 2%;
 }
-.client p{
+.client p {
   width: 300px;
   margin: 7% 1%;
 }
-.service-images,.project-images,.client-images{
-  margin-bottom: 7%;
-}
-.project hr{
-  color: #6610f2;
+.project hr {
   width: 380px;
   border-width: 2px;
 }
-.footer{
-  display: flex;
-  flex-direction: row;
+.footer {
   margin-bottom: 5%;
 }
-.footer img{
+.footer img {
   height: 450px;
   width: 42%;
   margin-left: 15%;
 }
-.footer-details{
+.footer-details {
   margin-left: 10%;
 }
-.footer-details h3{
+.footer-details h3 {
   padding: 10px 0;
   font-weight: 600;
 }
-.footer-details p{
-  font-size: 20px;
-}
-.footer-details i{
-  color: #6610f2;
+.footer-details i {
   padding: 10px;
 }
-/* large laptop */
+/*****************************
+          Media queries
+  ******************************/
+/* Media query for 1440px:start */
 @media only screen and (max-width: 1440px) {
-  .navbar-nav{
+  .navbar-nav {
     margin-left: 50%;
   }
-  #home-section img{
+  #home-section img {
     margin-top: -40%;
   }
-  #home-section{
+  #home-section {
     margin-bottom: 5%;
   }
-  .about-description p{
+  .about-description p {
     width: 70%;
   }
 }
-/* laptop */
+/* Media query for 1440px:end */
+/* Media query for 1024px:start */
 @media only screen and (max-width: 1024px) {
   html,
   body {
     width: auto !important;
     overflow-x: hidden !important;
   }
-  .navbar-nav{
+  .navbar-nav {
     margin-left: 35%;
   }
-  #home-section img{
+  #home-section img {
     height: 40%;
     width: 40%;
     margin-top: -50%;
   }
-  .home-details{
-    margin: 12% 0 0 13%;
+  .home-details {
     width: 42%;
   }
-  .about-description p{
+  .about-description p {
     width: 75%;
   }
-  .about-description{
+  .about-description {
     margin: 8% 0% 5% 10%;
   }
-  .about-images{
+  .about-images {
     margin: 8% 2% 5% 0;
   }
-  .about-images img{
+  .about-images img {
     width: 400px;
-    margin: 1%;
   }
-  #service-section h1,#project-section h1,#client-section h1,#contact-section h1{
+  #service-section h1,
+  #project-section h1,
+  #client-section h1,
+  #contact-section h1 {
     margin: 8% 0 8% 10%;
   }
-  .service-images img,.project-images img{
+  .service-images img,
+  .project-images img {
     padding: 2%;
   }
-  .footer img{
+  .footer img {
     margin-left: 10%;
     height: 400px;
   }
 }
-/* tablet */
+/* Media query for 1024px:end */
+/* Media query for 768px:start */
 @media only screen and (max-width: 768px) {
-  .navbar-nav{
+  .navbar-nav {
     margin-left: 40%;
   }
-  .nav-item{
+  .nav-item {
     padding: 10px 20px;
   }
-  #home-section img{
+  #home-section img {
     height: 50%;
     width: 50%;
     margin-top: -60%;
   }
-  .home-details{
+  .home-details {
     margin: 12% 0 0 8%;
     width: 55%;
   }
-  #about-section{
+  #about-section,.footer {
     flex-direction: column;
   }
-  .about-description p{
+  .about-description p {
     width: 100%;
   }
-  .about-description{
+  .about-description {
     margin: 8% 3% 5% 3%;
     text-align: center;
   }
-  .about-images{
+  .about-images {
     margin: 3% 0% 8% 0%;
-    justify-content: center;
-    align-items: center;
   }
-  .about-images img{
-    width: 400px;
-    margin: 1%;
-  }
-  .team-member img{
+  .team-member img {
     height: 60%;
     width: 60%;
   }
-  #service-section h1,#project-section h1,#client-section h1,#contact-section h1{
+  #service-section h1,
+  #project-section h1,
+  #client-section h1,
+  #contact-section h1 {
     margin: 8% 0 8% 2%;
     text-align: center;
   }
-  .client-images img{
-    padding:5% 8%;
+  .client-images img {
+    padding: 5% 8%;
   }
-  .footer{
+  .footer, .about-images {
     justify-content: center;
     align-items: center;
-    flex-direction: column;
   }
-  .footer img{
+  .footer img {
     margin-left: 0%;
-    width:  80%;
+    width: 80%;
   }
-  .footer-details{
+  .footer-details {
     margin-left: -53%;
     margin-top: 4%;
   }
 }
-/* large mobile */
+/* Media query for 768px:end */
+/* Media query for 425px:start */
 @media only screen and (max-width: 425px) {
-  .navbar-nav{
+  .navbar-nav {
     margin-left: 30%;
   }
-  #home-section{
-    flex-direction: column;
+  #home-section {
     justify-content: center;
     align-items: center;
   }
-  #home-section img{
+  #home-section img {
     height: 90%;
     width: 90%;
     margin-top: 2%;
     margin-left: 0%;
   }
-  .home-details{
+  .home-details {
     margin: 12% 2% 0 2%;
     width: 100%;
   }
-  #team-section{
+  #team-section {
     text-align: center;
   }
-  .team-images{
+  #home-section,.team-images {
     flex-direction: column;
   }
-  .team-member{
-   margin-top: 5%;
+  .team-member {
+    margin-top: 5%;
   }
-  .footer img{
+  .footer img {
     margin-left: 0%;
-    width:  80%;
+    width: 80%;
     height: 50%;
   }
-  .footer-details{
+  .footer-details {
     margin-left: -40%;
   }
 }
-/* m mobile */
+/* Media query for 425px:end */
+/* Media query for 375px:start */
 @media only screen and (max-width: 375px) {
-.service-images img,.project-images img{
-  width: 350px;
-}
-  .footer-details{
+  .service-images img,
+  .project-images img {
+    width: 350px;
+  }
+  .footer-details {
     margin-left: -35%;
   }
-  .about-images img{
+  .about-images img {
     width: 350px;
   }
 }
-/* s mobile */
+/* Media query for 375px:end */
+/* Media query for 320px:start */
 @media only screen and (max-width: 320px) {
-.service-images img,.project-images img{
-  width: 300px;
-}
-  .footer-details{
+  .service-images img,
+  .project-images img {
+    width: 300px;
+  }
+  .footer-details {
     margin-left: -30%;
   }
-  .about-images img{
+  .about-images img {
     width: 300px;
   }
 }
+/* Media query for 320px:end */
