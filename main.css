@@ -49,7 +49,7 @@ nav {
   margin-left: 60%;
 }
 .toggleBtn,
-.navbar-toggler {
+.navbar-toggler,.topBtn {
   cursor: pointer;
 }
 .navbar-toggler,
@@ -115,8 +115,8 @@ nav {
 .client {
   flex-wrap: wrap;
 }
-#home-section,.home-details button,#project-section,
-#contact-section,#team-section,.team-images,.project hr,.footer-details i {
+#home-section,.home-details button,#project-section,#contact-section h1,#project-section h1,.project,
+#contact-section,#team-section,#service-section,.team-images,.project hr,.footer-details,.footer-details i {
   color: #6610f2;
 }
 #home-section img {
@@ -274,6 +274,48 @@ nav {
 }
 .footer-details i {
   padding: 10px;
+}
+.topBtn{
+  font-size: 3rem;
+  background: #fff;
+  border: none;
+  outline: none;
+  color: #6610f2;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  height: 80px;
+  width: 80px;
+  display: none;
+  border-radius: 50%;
+}
+.topBtn:hover {
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
 /*****************************
           Media queries
